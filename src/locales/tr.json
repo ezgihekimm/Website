@@ -1,0 +1,24 @@
+{
+	"header": {
+		"anasayfa": "Ana Sayfa",
+		"hakkimizda": "Hakkımızda",
+		"bizkimiz" : "Biz Kimiz?",
+		"hedeflerimiz": "Hedeflerimiz",
+		"patent": "Patentler",
+		"urunler": "Ürünler",
+		"projeler": "Projeler",
+		"sualtı":"Sualtı Optik Spektrum Ölçüm Cihazı",
+		"denizaltı":"Denizaltılarda Öz Akustik Kestirimi ve Akustik İzleme/Uyarı Sistemi",
+		"akusto" : "Akusto-Optik Haberleşme Sistemi Projesi",
+		"helikopter": "Denizaltı-Helikopter Arasında Güvenli Optik Haberleşme Sistemi",
+		"insan": "İnsan Kaynakları",
+		"bize": "Bize Ulaşın"
+	
+	},
+    "footer":{
+        "bau": "BAU İNOVASYON VE",
+		"bau1": "DANIŞMANLIK A.Ş",
+		"hak": "Hakkımızda",
+		"sosyal": "SOSYAL MEDYA HESAPLARIMIZ"
+    }
+}

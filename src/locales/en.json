@@ -1,0 +1,25 @@
+{
+	"header": {
+		"anasayfa": "Homepage",
+        "hakkimizda": "About Us ",
+        "bizkimiz": "Who Are We?",
+        "hedeflerimiz": "Our Aims",
+        "patent": "Patents",
+        "urunler": "Products",
+        "projeler": "Projects",
+        "sualtı":"Underwater Optical Spectrum Measuring Device",
+        "denizaltı": "Self Acoustic Estimation And Acoustic Monitoring / Warning System",
+        "akusto" : "Acousto-Optical Communication System Project Between Moving Vehicles",
+        "helikopter": "Safe Optical Communication System Between Submarine-Helicopter",
+        "insan": "Human Resources",
+        "bize": "Contact Us"
+
+      
+	},
+    "footer":{
+        "bau": "BAU INNOVATION AND",
+        "bau1": "CONSULTANCY INC.",
+        "hak": "About Us",
+        "sosyal": "OUR SOCIAL MEDIA"
+    }
+}
