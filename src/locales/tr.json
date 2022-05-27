@@ -20,5 +20,40 @@
 		"bau1": "DANIŞMANLIK A.Ş",
 		"hak": "Hakkımızda",
 		"sosyal": "SOSYAL MEDYA HESAPLARIMIZ"
-    }
+    }, 
+	"home":{
+		"biz":"BAU A.Ş.; İlk etapta 2008 yılında Bahçeşehir Üniversitesi bünyesinde Teknoloji Geliştirme Birimi olarak faaliyetlerine başlamıştır.",
+		"hedef":"Türkiye’nin askeri ve sivil alanlarda teknolojik ihtiyaçları ve stratejik hedefleri doğrultusunda; öncelikli olarak elektro-optik ve akustik alanında bilgi, teknoloji ve yenilikçi çözümler üreten, yurtiçinin yanı sıra yurtdışında da rekabet edebilecek yetkinliğe sahip lider bir firma olmak",
+		"vizyon":"Yeni teknolojilerin peşinde Türkiye’ nin askeri ve sivil alanlarda teknolojik ihtiyaçları ve stratejik hedefleri doğrultusunda elektro-optik alanında bilgi ve teknoloji üreten yurtiçi ve yurtdışında yetkinliğe sahip lider bir kurum olmak.",
+		"misyon":"Vizyon & Misyon",
+		"hedeflerimiz":"Hedeflerimiz",
+		"bizkimiz":"Biz Kimiz?",
+		"hakkımızda":"Hakkımızda",
+		"akustik":"Akustik",
+        "optik":"Optik",
+        "izleme":"izleme & Algılama",
+        "elektrik":"Elektronik Tasarım ve Üretim",
+        "eğitim":"Eğitim & Danışmanlık"
+	},
+	"aims":{
+
+		"hedeflerimiz":"Hedeflerimiz",
+		"bau":"BAU İnovasyon ve Danışmanlık A.Ş.",
+		"amac1":"Türkiye’nin askeri ve sivil alanlarda teknolojik ihtiyaçları ve stratejik hedefleri doğrultusunda; öncelikli olarak elektro-optik ve akustik alanında bilgi, teknoloji ve yenilikçi çözümler üreten, yurtiçinin yanı sıra yurtdışında da rekabet edebilecek yetkinliğe sahip lider bir firma olmak",
+		"amac2":" Türkiye’nin teknolojik alanda dış ülkelere bağlılığını azaltmada katkıda bulunacak nitelikte, elektro-optik ve akustik alanında yenilikçi çözümler üretmek amacıyla, üniversiteler ve diğer mühendislik firmaları ile stratejik ortaklıklar kurarak, ileri teknolojileri uygulamaları içeren ARGE ve ürün geliştirme faaliyetlerini yürütmek",
+		"amac3":" Askeri ve sivil çift kullanıma uygun yenilikçi proje ve ürünlerimizi-çözümlerimizi ilgili sektörlere lisanslamak/teknolojiyi transfer etmek, bunlara ek olarak sektördeki kurum ve firmalara uzmanlık alanlarımızda danışmanlık-eğitim hizmeti sunmaktır."
+	},
+	"patent":{
+		"patent1":"Sualtı elektro-optik haberleşme sistemi",
+		"patent2":"Su altı optik akustik kompozit tuzak sistemi",
+		"patent3":"Optik Nişangâhlı Silahlarda Kablosuz Görüntü Aktarma Cihazı",
+		"patent4":"Bir Lastik Aşınma Kontrol Sistemi",
+		"patent5":"Sualtı Aydınlatma Tertibatı",
+		"patent6":"Suyun Soğurma Kabiliyetini Analiz Etmek İçin Bir Sualtı Analiz Cihazı",
+		"patent7":"Su Altında Aydınlatma Yapmaya Uygun Bir Aydınlatma Tertibatı",
+		"patent8":"Bir Su Altı Haberleşme Cihazı",
+		"patent9":"Sualtı Platformları Arasında Haberleşme Cihazı",
+		"patent10":"Modüler Bir Elektro Optik Haberleşme Cihazı"
+	}
+
 }

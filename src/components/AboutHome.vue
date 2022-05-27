@@ -6,13 +6,13 @@
 
             <div class="col-lg ps-md-4  info  ">
                 <div class="Head">
-                    <h2>Hakkımızda</h2>
+                    <h2>{{$t('home.hakkımızda')}}</h2>
                 </div>
                 <hr class="line">
                 <div class="contain">
                     <div class="first">
                         <span class="number">01</span>
-                        <h3 class="first1"> Biz Kimiz?</h3>
+                        <h3 class="first1">{{$t('home.bizkimiz')}}</h3>
                         <div style="display: flex; flex-grow: 1;"></div>
 
                         <span class="material-symbols-outlined" @click="show=!show" type="button">
@@ -23,33 +23,59 @@
                     <Transition>
                         <div class="info" v-if="show" style="width:70%">
 
-                            <p> BAU A.Ş.; ilk etapta 2008 yılında Bahçeşehir Üniversitesi bünyesinde Teknoloji
-                                Geliştirme Birimi
-                                olarak faaliyetlerine başladı.</p>
-                            <div class="button" type="button">Daha Fazlası <span class="material-symbols-outlined arrow">
+                            <p> {{ $t('home.biz')}} </p>
+                            <div class="button" type="button">Daha Fazlası <span
+                                    class="material-symbols-outlined arrow">
                                     north_east
                                 </span></div>
                         </div>
                     </Transition>
 
                     <hr class="line">
+
+
                     <div class="second">
                         <span class="number">02</span>
-                        <h3 class="second1"> Hedeflerimiz </h3>
+                        <h3 class="second1"> {{$t('home.hedeflerimiz')}} </h3>
                         <div style="display: flex; flex-grow: 1;"></div>
-                        <span class="material-symbols-outlined">
+                        <span class="material-symbols-outlined"  @click="show1=!show1" type="button">
                             arrow_downward
                         </span>
                     </div>
+                   
+                    <Transition>
+                        <div class="info" v-if="show1" style="width:70%">
+                            <p> {{ $t('home.hedef')}} </p>
+                            <div class="button" type="button">Daha Fazlası <span
+                                    class="material-symbols-outlined arrow">
+                                    north_east
+                                </span></div>
+                        </div>
+                    </Transition>
+
+
+
+
+
                     <hr class="line">
+
                     <div class="third">
                         <span class="number">03</span>
-                        <h3 class="third1"> Patentler </h3>
+                        <h3 class="third1"> {{$t('home.misyon')}} </h3>
                         <div style="display: flex; flex-grow: 1;"></div>
-                        <span class="material-symbols-outlined">
+                        <span class="material-symbols-outlined"  @click="show2=!show2" type="button">
                             arrow_downward
                         </span>
                     </div>
+                    <Transition>
+                        <div class="info" v-if="show2" style="width:70%">
+                            <p> {{ $t('home.vizyon')}} </p>
+                            <div class="button" type="button">Daha Fazlası <span
+                                    class="material-symbols-outlined arrow">
+                                    north_east
+                                </span></div>
+                        </div>
+                    </Transition>
                     <hr class="line">
 
                 </div>
@@ -63,7 +89,10 @@
         name: 'AboutUs',
         data: function () {
             return {
-                show: true
+                show: true,
+                show1:false,
+                show2:false,
+
             }
         }
     }
@@ -180,7 +209,8 @@
         transform: rotate(180deg);
         -webkit-transform: rotate(180deg);
     }
-    .arrow{
+
+    .arrow {
         color: white;
     }
 </style>

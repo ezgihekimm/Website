@@ -1,6 +1,6 @@
 <template>
 	<Header />
-
+   <our-aims />
 	<Footer />
 </template>
 
@@ -18,6 +18,7 @@
 <script>
 
 import Header from '../components/Header'
+import OurAims from '../components/OurAims'
 
 import Footer from '../components/Footer'
 
@@ -25,6 +26,7 @@ export default {
 	name: 'App',
 	components: {
 		Header,
+		OurAims,
         
 		Footer,
 	},

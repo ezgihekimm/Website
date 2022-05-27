@@ -2,7 +2,8 @@
 	<Header :transparent="true" />
 	<Slider />
 	<Yazi />
-    <about-home/>
+    <about-home/> 
+	<Info />
     <ContactHome/>
 	<Footer />
 </template>
@@ -24,6 +25,7 @@ import Header from '../components/Header'
 import Slider from '../components/Slider'
 import Yazi from '../components/Yazi'
 import AboutHome from '../components/AboutHome.vue'
+import Info from '../components/Info.vue'
 import ContactHome from '../components/ContactHome.vue'
 import Footer from '../components/Footer'
 
@@ -37,6 +39,7 @@ export default {
 		Yazi,
         ContactHome,
         AboutHome,
+		Info,
 		Footer
 
 	},
