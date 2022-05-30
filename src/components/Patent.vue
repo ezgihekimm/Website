@@ -203,29 +203,31 @@
         color: white;
     }
 
-    .head:after {
-        content: '';
-        position: absolute;
-        width: 50%;
-        transform: scaleX(0);
-        height: 1px;
-        bottom: 0;
-        left: 0;
-        background-color:
-           aliceblue;
-        transform-origin: bottom right;
-        transition: transform 1s ease-out;
-    }
-
-    .head:hover:after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
-
     .head {
-      
-        position: relative;
-        color:
-          aliceblue
-    }
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+.head:hover {
+  
+}
+
+.head:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(248, 248, 248);
+  transform: scaleX(0);
+  transition: transform 1s ease;
+}
+
+.head:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 </style>
