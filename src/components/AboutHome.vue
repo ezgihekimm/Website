@@ -121,11 +121,7 @@
         padding: 15px 32px;
         color: white;
         width: 50%;
-        max-height: 40px;
-
-
-
-    }
+        max-height: 40px; }
 
 
     .info {

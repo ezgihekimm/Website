@@ -6,29 +6,67 @@
                     {{ $t('footer.bau')}} <h5 class="baslik mb-5">{{ $t('footer.bau1')}}</h5>
                 </h5>
                 <p class="info">Telefon: +90 212 381 0970</p>
+               
                 <p class="info">Adres: Altunizade Mah. Oymacı Sok. No: 15 34662 Üsküdar-İstanbul Bahçeşehir Koleji
                     Nakkaştepe 50.Yıl Kampüsü </p>
-                <img class="logo" src="@/assets/images/logo1.png" width="150px">
+                    <img class="logo" src="@/assets/images/logo1.png" >
+
+               
 
             </div>
             <div class="col-md-3 second mt-4">
                 <ul class="info1 ">
-                    <li> {{ $t('footer.hak')}}</li>
-                    <li><a href="#">biz kimiz?</a></li>
+                    <li>
+                        <router-link to="/hakkimizda" custom v-slot="{ navigate, href }">
+                            <a :href="href" @click="navigate" class="menu-item">
+
+                                {{ $t('header.hakkimizda')}}
+                            </a>
+                        </router-link>
+                    </li>
+                    <li>
+                        <router-link to="/who-are-we" custom v-slot="{ navigate, href }">
+                            <a :href="href" @click="navigate">
+                                {{ $t('header.bizkimiz')}}
+                            </a>
+                        </router-link>
+                    </li>
                     <li><a href="#">haberler</a></li>
                     <li><a href="#">insan kaynakları</a></li>
-                   
+                     
+
                 </ul>
 
             </div>
             <div class="col-md-3 third mt-4">
 
-               <ul class="info1">
-                   <li><a href="#">ürünler</a></li>
-                    <li><a href="#">projeler</a></li>
-                    <li><a href="#">bize ulaşın</a></li>
+                <ul class="info1">
+                    <li>
+                        <router-link to="/products" custom v-slot="{ navigate, href }">
+                            <a :href="href" @click="navigate" class="menu-item">
+
+                                {{ $t('header.urunler')}}
+                            </a>
+                        </router-link>
+                    </li>
+                    <li>
+                        <router-link to="/projects" custom v-slot="{ navigate, href }">
+                            <a :href="href" @click="navigate" class="menu-item">
+                               
+                                {{ $t('header.projeler')}}
+                            </a>
+                        </router-link>
+                    </li>
+                    <li>
+                        <router-link to="/contact-us" custom v-slot="{ navigate, href }">
+                            <a :href="href" @click="navigate" class="menu-item">
+                                
+                                {{ $t('header.bize')}}
+                            </a>
+                        </router-link>
+                    </li>
                     <li><a href="#">iletişim</a></li>
-               </ul>
+                </ul>
 
 
             </div>
@@ -41,10 +79,9 @@
     </div>
 </template>
 <script>
-export default{
-    name:'Footer'
-}
-
+    export default {
+        name: 'Footer'
+    }
 </script>
 
 
@@ -52,7 +89,7 @@ export default{
     .footer {
         width: 100%;
         height: 420px;
-        background-color: #1d1d1d;
+        background-color: #121619;
         font-family: 'DM Sans', sans-serif;
     }
 
@@ -73,6 +110,7 @@ export default{
 
     .logo {
         margin-top: 40px;
+        width:150px;
     }
 
     .info {
@@ -81,7 +119,21 @@ export default{
         font-size: 15px;
     }
 
-   .info1 li a {
+    .info1 li a {
+        color: rgb(184, 184, 184);
+        text-decoration: none;
+        text-align: justify;
+        margin-left: 80px;
+        padding: 8px 16px;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 15px;
+        text-transform: capitalize;
+
+
+
+    }
+
+    .info1 li {
         color: rgb(184, 184, 184);
         text-decoration: none;
         text-align: justify;
@@ -124,7 +176,4 @@ export default{
         ;
 
     }
-
-    
-    
 </style>

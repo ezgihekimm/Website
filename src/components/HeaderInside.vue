@@ -5,7 +5,7 @@
 		</div>
 		<div class="list">
 			<ul>
-				<li class="ana">
+				<li class="home">
 					<router-link to="/" custom v-slot="{ navigate, href, isExactActive }">
 						<a :href="href" @click="navigate" class="menu-item">
 							<i :class="[isExactActive == true ? 'fa-solid' : 'fa-regular', 'fa-circle']"></i>
@@ -14,7 +14,7 @@
 					</router-link>
 				</li>
 
-				<li class="hak">
+				<li class="about">
 					<router-link to="/hakkimizda" custom v-slot="{ navigate, href, isExactActive }">
 						<a :href="href" @click="navigate" class="menu-item">
 							<i :class="[isExactActive == true ? 'fa-solid' : 'fa-regular', 'fa-circle']"></i>
@@ -23,23 +23,27 @@
 					</router-link>
 
 					<div class="down-content1">
+						<div class="content">
 						<router-link to="/who-are-we" custom v-slot="{ navigate, href }">
 							<a :href="href" @click="navigate">
 								{{ $t('header.bizkimiz')}}
 							</a>
 						</router-link>
-
+						</div>
+                         <div class="content">
 						<router-link to="/our-aims" custom v-slot="{ navigate, href }">
 							<a :href="href" @click="navigate">
 								{{ $t('header.hedeflerimiz')}}
 							</a>
 						</router-link>
-
+						</div>
+                  <div class="content">
 						<router-link to="/patent" custom v-slot="{ navigate, href }">
 							<a :href="href" @click="navigate">
 								{{ $t('header.patent')}}
 							</a>
 						</router-link>
+						</div>
 
 					</div>
 				</li>
@@ -52,27 +56,33 @@
 						</a>
 					</router-link>
 					<div class="down-content2">
+						
+					
+					<div class="content">
 
 						<router-link to="/co-link" custom v-slot="{ navigate, href }">
 							<a :href="href" @click="navigate">
 								coLink
 							</a>
 						</router-link>
+						</div>
 
-
+	                      <div class="content">
 						<router-link to="/co-light" custom v-slot="{ navigate, href }">
 							<a :href="href" @click="navigate">
 								coLighting
 							</a>
 						</router-link>
+						</div>
 
-
+                    <div class="content">
 						<router-link to="/co-diver" custom v-slot="{ navigate, href }">
 							<a :href="href" @click="navigate">
 								coDiver
 							</a>
 						</router-link>
 
+					</div>
 					</div>
 				</li>
 
@@ -84,52 +94,61 @@
 						</a>
 					</router-link>
 					<div class="down-content3">
+						<div class="content">
 
 						<router-link to="/under-water" custom v-slot="{ navigate, href }">
 							<a :href="href" @click="navigate">
 								{{ $t('header.sualtı')}}
 							</a>
 						</router-link>
+						</div>
 
 
-
+                          <div class="content">
 						<router-link to="/under-sea" custom v-slot="{ navigate, href }">
 							<a :href="href" @click="navigate">
 								{{ $t('header.denizaltı')}}
 							</a>
 						</router-link>
+						</div>
 
-
+						 <div class="content">
 						<router-link to="/acusto" custom v-slot="{ navigate, href }">
 							<a :href="href" @click="navigate">
 								{{ $t('header.akusto')}}
 							</a>
 						</router-link>
-
+						</div>
+						<div class="content">
 						<router-link to="/helicopter" custom v-slot="{ navigate, href }">
 							<a :href="href" @click="navigate">
 								{{ $t('header.helikopter')}}
 							</a>
 						</router-link>
+						</div>
 
 					</div>
 				</li>
 
 				<li class="biz">
+					
 					<router-link to="/contact-us" custom v-slot="{ navigate, href }">
 						<a :href="href" @click="navigate" class="menu-item">
 							<i :class="[isExactActive == true ? 'fa-solid' : 'fa-regular', 'fa-circle']"></i>
 							{{ $t('header.bize')}}
 						</a>
 					</router-link>
+				
 
 					<div class="down-content4">
+						<div class="content">
 
 						<router-link to="/human" custom v-slot="{ navigate, href }">
 							<a :href="href" @click="navigate">
 								{{ $t('header.insan')}}
 							</a>
 						</router-link>
+						</div>
 
 
 					</div>
@@ -280,21 +299,34 @@ function scrollFunction() {
 	margin-left: 15px;
 }
 
-.down-content a,
+
 .down-content1 a,
 .down-content2 a,
 .down-content3 a,
 .down-content4 a {
 	color: black !important;
-	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
 	font-family: 'DM Sans', sans-serif;
+    display: inline-block;
+    background-image: linear-gradient(#2b2b2b, #2b2b2b);
+    background-size: 0% 1px;/*                        ↓ y position of underline. you can change as 50% to see it. */
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background 0.3s linear;
+
+
+	
+    
+	
 
 
 }
+.content{
+	padding: 10px;
+}
 
-.down-content,
+
 .down-content1,
 .down-content2,
 .down-content3,
@@ -305,49 +337,49 @@ function scrollFunction() {
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	min-width: 160px;
 	z-index: 1;
-	padding: 20px;
 	font-size: 14px;
+	padding: 20px;
+   
+
 }
 
 
-.down-content a:hover {
-	background-color: #ddd;
+
+.down-content1 a:hover{
+	background-size: 100% 1px;
 }
 
-.list .ana:hover .down-content {
+.down-content2 a:hover{
+	background-size: 100% 1px;
+}
+
+.down-content3 a:hover{
+	background-size: 100% 1px;
+}
+.down-content4 a:hover{
+	background-size: 100% 1px;
+}
+
+
+.list .about:hover .down-content1 {
 	display: block;
+
+
 }
 
 
-.down-content1 a:hover {
-	background-color: #ddd;
-}
-
-.list .hak:hover .down-content1 {
-	display: block;
-}
-
-
-.down-content2 a:hover {
-	background-color: #ddd;
-}
 
 .list .ürün:hover .down-content2 {
 	display: block;
 }
 
-.down-content3 a:hover {
-	background-color: #ddd;
-}
+
 
 .list .proje:hover .down-content3 {
 	display: block;
 }
 
 
-.down-content4 a:hover {
-	background-color: #ddd;
-}
 
 .list .biz:hover .down-content4 {
 	display: block;
@@ -359,6 +391,5 @@ function scrollFunction() {
 		display: none;
 	}
 }
-
-
+ 
 </style>

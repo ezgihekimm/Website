@@ -7,29 +7,39 @@
                 aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="@/assets/images/engin2.jpg"  class=" img1 d-block w-100 " alt="...">
+                <img src="@/assets/images/mühendis.jpeg"  class=" img1 d-block w-100 " alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="@/assets/images/engineer.jpg" class=" img1 d-block w-100 " alt="...">
+                <img src="@/assets/images/dalgıc.jpeg" class=" img1 d-block w-100 " alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Second slide label</h5>
                     <p>Some representative placeholder content for the second slide.</p>
                 </div>
             </div>
-            <div class="carousel-item" style="width:100% height:70%">
-                <img src="@/assets/images/gemi.jpg" class=" img1 d-block w-100" alt="...">
+            <div class="carousel-item" >
+                <img src="@/assets/images/gemi2.jpeg" class=" img1 d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Third slide label</h5>
                     <p>Some representative placeholder content for the third slide.</p>
                 </div>
             </div>
+                <div class="carousel-item" >
+                <img src="@/assets/images/dalgıc3.jpeg" class=" img1 d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+            
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
             data-bs-slide="prev">
@@ -59,13 +69,8 @@
     transition: transform 2s ease, opacity .5s ease-out;
     
 }
-    .carousel-caption {
-        
-        
-    
-    }
-    .img1{
-    }
+
+  
 
     .lineUp {
         animation: 5s anim-lineUp  infinite;
