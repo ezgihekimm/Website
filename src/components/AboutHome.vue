@@ -15,12 +15,12 @@
                         <h3 class="first1">{{$t('home.bizkimiz')}}</h3>
                         <div style="display: flex; flex-grow: 1;"></div>
 
-                        <span class="material-symbols-outlined" @click="show=!show" type="button">
+                        <span id="" class="material-symbols-outlined" @click="show=!show" type="button">
                             arrow_downward
                         </span>
 
                     </div>
-                    <Transition>
+                 <transition name="slide">
                         <div class="info" v-if="show" style="width:70%">
 
                             <p> {{ $t('home.biz')}} </p>
@@ -29,7 +29,8 @@
                                     north_east
                                 </span></div>
                         </div>
-                    </Transition>
+                        </transition>
+                    
 
                     <hr class="line">
 
@@ -43,7 +44,7 @@
                         </span>
                     </div>
                    
-                    <Transition>
+                     <transition name="slide">
                         <div class="info" v-if="show1" style="width:70%">
                             <p> {{ $t('home.hedef')}} </p>
                             <div class="button" type="button">Daha Fazlası <span
@@ -51,7 +52,7 @@
                                     north_east
                                 </span></div>
                         </div>
-                    </Transition>
+                  </transition>
 
 
 
@@ -67,15 +68,19 @@
                             arrow_downward
                         </span>
                     </div>
-                    <Transition>
+                  <transition name="slide">
                         <div class="info" v-if="show2" style="width:70%">
                             <p> {{ $t('home.vizyon')}} </p>
-                            <div class="button" type="button">Daha Fazlası <span
+
+                            <div class="button" type="button"> Daha Fazlası
+                                 <span
                                     class="material-symbols-outlined arrow">
                                     north_east
-                                </span></div>
+                                </span>
+
+                                </div>
                         </div>
-                    </Transition>
+                 </transition>
                     <hr class="line">
 
                 </div>
@@ -101,16 +106,23 @@
 
 <style scoped>
     /* we will explain what these classes do next! */
-    .v-enter-active,
-    .v-leave-active {
-        transition: opacity 0.5s ease-in-out;
-    }
+  
+.slide-enter-active,
+.slide-leave-active {
+  transition: max-height 0.7s ease-in-out;
+}
 
-    .v-enter-from,
-    .v-leave-to {
-        opacity: 0;
-    }
+.slide-enter-to,
+.slide-leave-from {
+  overflow: hidden;
+  max-height: 1000px;
+}
 
+.slide-enter-from,
+.slide-leave-to {
+  overflow: hidden;
+  max-height: 0;
+}
     .button {
         background-color: black;
         border-radius: 40px;
@@ -120,13 +132,17 @@
         display: flex;
         padding: 15px 32px;
         color: white;
-        width: 50%;
-        max-height: 40px; }
+        width: 35%;
+        max-height: 40px; 
+        margin-top: 30px;
+       
+        }
 
 
     .info {
         margin-left: 122px;
-
+        padding-bottom:10px
+      
 
     }
 
@@ -171,9 +187,9 @@
     .first,
     .second,
     .third {
-        margin-left: 100px;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        padding-left: 100px;
+        padding-top: 20px;
+        padding-bottom: 10px;
         display: flex;
         align-items: center;
 
@@ -201,7 +217,7 @@
 
     }
 
-    .material-symbols-outlined:hover {
+    .button > span:hover {
         transform: rotate(180deg);
         -webkit-transform: rotate(180deg);
     }

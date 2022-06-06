@@ -1,104 +1,132 @@
 <template>
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                aria-label="Slide 4"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="@/assets/images/mühendis.jpeg"  class=" img1 d-block w-100 " alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="@/assets/images/dalgıc.jpeg" class=" img1 d-block w-100 " alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                </div>
-            </div>
-            <div class="carousel-item" >
-                <img src="@/assets/images/gemi2.jpeg" class=" img1 d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                </div>
-            </div>
-                <div class="carousel-item" >
-                <img src="@/assets/images/dalgıc3.jpeg" class=" img1 d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                </div>
-            </div>
+    <div class="container-fluid _con">
+        <ul class="slides ">
+            <li>
+            <img :src="images[currentImage]" width="400" height="500"><br /><br />
+            </li>
+        </ul>
+        
             
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+
     </div>
+    <button @click="previousImage" class="btn btn-primary" :disabled="currentImage === 0">Previous</button>
+            <button @click="nextImage" class="btn btn-primary"
+                :disabled="currentImage === (images.length - 1)">Next</button>
+
 </template>
 
 <script>
     export default {
         name: 'Slider',
+        data: function () {
+            return {
+                images: [
+                    require('../assets/images/dalgıc.jpeg'),
+                    require('../assets/images/gemi2.jpeg'),
+                    require('../assets/images/mühendis.jpeg'),
+                    require('../assets/images/yetenk.jpeg'),
+
+                ],
+                currentImage: 0
+
+            }
+        },
+        methods: {
+            nextImage: function (e) {
+                if (this.currentImage !== (this.images.length - 1))
+                
+                    this.currentImage++;
+                    
+            },
+
+            previousImage: function (e) {
+                if (this.currentImage !== 0)
+                    this.currentImage--;
+            }
+        }
+
+
+
+
     }
 </script>
 
 <style>
-.carousel-inner{
-    display: flex;
-    align-items: center;
-}
-.carousel-item{
-    transition: transform 2s ease, opacity .5s ease-out;
-    
-}
+    .slides img {
+        width: 100%;
+    }
 
-  
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+        margin: 0;
+        padding: 0;
+    }
 
-    .lineUp {
-        animation: 5s anim-lineUp  infinite;
-       
+    ._con {
+        display: flex;
+        justify-content: center;
+        margin: 0 0;
+        padding-right: 0px;
+        padding-left: 0px;
+         animation: slide 2s ease 0s 2 normal backwards;
+    }
+
+    .slides {
+        overflow: hidden;
+        width: 100%;
+        height: 100vmin;
+        padding-right: 0px;
+        padding-left: 0px;
+        animation: slide 2s ease 0s 2 normal backwards;
+           
+
 
     }
 
-    @keyframes anim-lineUp {
+    .slides li {
+        width: 100%;
+        height: 100vmin;
+        position: absolute;
+        z-index: 1;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .slides img {
+        height: 100vmin;
+        object-fit: cover;
+        object-position: top;
+        animation: slide 2s ease 0s 2 normal ;
+
+    }
+
+    .slides li:target {
+        z-index: 3;
+        animation: slide 2s ease 0s 2 normal ;
+
+
+    }
+
+    @keyframes slide {
         0% {
-            opacity:0 ;
-            transform: translateY(80%);
-        }
-
-        20% {
-            opacity: 1;
-            transform: translateY(0%);
-        }
-
-        50% {
-            opacity: 1;
-            transform: translateY(0%);
+            transform: translateY(-100%);
         }
 
         100% {
-            opacity: 1;
             transform: translateY(0%);
         }
+
     }
- 
-   
+
+    @keyframes hidden {
+        0% {
+            z-index: 2;
+        }
+
+        100% {
+            z-index: 2;
+        }
+    }
 </style>

@@ -6,9 +6,6 @@
   </div>
 
 
-
-   
-
         <div class="row _patent">
             <div class="col-md-12 head">
                 <div class="dot">1</div>

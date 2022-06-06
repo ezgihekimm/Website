@@ -3,6 +3,7 @@
 	<Slider />
 	<Yazi />
     <about-home/> 
+	
 	<Info />
     <ContactHome/>
 	<Footer />
@@ -39,6 +40,7 @@ export default {
 		Yazi,
         ContactHome,
         AboutHome,
+	
 		Info,
 		Footer
 

@@ -70,7 +70,7 @@
 
 
             </div>
-            <div class="col-md-2 four">
+            <div class="col-md-1 four">
                 <h5 class="baslik mt-5">{{ $t('footer.sosyal')}}</h5>
 
             </div>
@@ -80,7 +80,7 @@
 </template>
 <script>
     export default {
-        name: 'Footer'
+        name: 'Footer'      
     }
 </script>
 
@@ -91,15 +91,15 @@
         height: 420px;
         background-color: #121619;
         font-family: 'DM Sans', sans-serif;
-    }
+        }
 
     .first {
-
         height: 300px;
         margin-left: 100px;
         margin-top: 50px;
         text-align: justify;
     }
+
 
     .baslik {
         color: rgb(233, 229, 229);

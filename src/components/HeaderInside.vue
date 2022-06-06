@@ -94,13 +94,15 @@
 						</a>
 					</router-link>
 					<div class="down-content3">
+
 						<div class="content">
 
-						<router-link to="/under-water" custom v-slot="{ navigate, href }">
+						<router-link to="/Project1" custom v-slot="{ navigate, href }">
 							<a :href="href" @click="navigate">
 								{{ $t('header.sualtı')}}
 							</a>
 						</router-link>
+
 						</div>
 
 

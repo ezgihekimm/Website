@@ -14,6 +14,7 @@ import Acusto from '../pages/Acusto'
 import Helicopter from '../pages/Helicopter'
 import ContactUs from '../pages/ContactUs'
 import Human from '../pages/Human'
+import Project1 from '../pages/Project1'
 
 
 
@@ -32,7 +33,8 @@ const routes = [
     { path: '/acusto', component: Acusto},
     { path: '/helicopter', component: Helicopter},
     { path: '/contact-us', component: ContactUs},
-    { path: '/human', component: Human}
+    { path: '/human', component: Human},
+    { path : '/Project1', component:Project1}
 
 ]
 
