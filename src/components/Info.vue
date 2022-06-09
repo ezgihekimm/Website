@@ -1,7 +1,7 @@
 <template>
-    <div class="container-fluid containerr">
+    <div class="container-fluid containerr" id="_container">
         <div class="row row1">
-            <div class="col-md-2 _info">
+            <div class="col-md-2 _info" id="info">
                 <div class="img1 mb-4" style="width:300px; "><img src="@/assets/images/akustik1.png"></div>
                 <div class="Head">
                     <h4 style="font-weight:bold;">{{$t('home.akustik')}}</h4>
@@ -11,7 +11,7 @@
                         adipisci illum debitis </p>
                 </div>
             </div>
-            <div class="col-md-2 _info">
+            <div class="col-md-2 _info" id="info">
                 <div class="img" style="width:200px"><img src="@/assets/images/optik1.png"></div>
                 <div class="Head">
                     <h4 style="font-weight:bold;">{{$t('home.optik')}}</h4>
@@ -21,7 +21,7 @@
                         adipisci illum debitis </p>
                 </div>
             </div>
-            <div class="col-md-2 _info">
+            <div class="col-md-2 _info" id="info">
                 <div class="img" style="width:190px"><img src="@/assets/images/devre.png"></div>
                 <div class="Head">
                     <h4 style="font-weight:bold;">{{$t('home.elektrik')}}</h4>
@@ -31,7 +31,7 @@
                         adipisci illum debitis </p>
                 </div>
             </div>
-            <div class="col-md-2 _info">
+            <div class="col-md-2 _info" id="info">
                 <div class="img" style="width:190px"><img src="@/assets/images/Uydu.png"></div>
                 <div class="Head">
                     <h4 style="font-weight:bold;">{{$t('home.izleme')}}</h4>
@@ -41,7 +41,7 @@
                         adipisci illum debitis </p>
                 </div>
             </div>
-            <div class="col-md-2 _info">
+            <div class="col-md-2 _info" id="info">
                 <div class="img" style="width:190px"><img src="@/assets/images/sunum.png"></div>
                 <div class="Head">
                     <h4 style="font-weight:bold;">{{$t('home.eğitim')}}</h4>
@@ -67,7 +67,7 @@
     .containerr {
 
         width: 100%;
-        height: 70vh;
+        max-width: 1600px;
         font-family: 'DM Sans', sans-serif;
         position: relative;
         padding: 5%;
@@ -94,13 +94,17 @@
     .row1 {
         justify-content: space-between;
         align-items: center;
+        width: 100%;
+        max-width: 1600px;
     }
 
    ._info {
+        width: 20%;
+        max-width:300px ;
         display: flex;
         flex-direction: column;
         transition: transform 250ms ease-in-out;
-       text-align: center;
+        text-align: center;
  
 
     }
@@ -146,5 +150,14 @@
         justify-content: center;
        
 
+    }
+    @media screen and (max-width: 1200px){
+        #info{
+            width: 100%;
+        }
+    #_container{
+        width: 100%;
+    }
+        
     }
 </style>
