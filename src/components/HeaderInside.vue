@@ -6,8 +6,8 @@
 		<div class="list">
 			<ul>
 				<li class="home">
-					<router-link to="/" custom v-slot="{ navigate, href, isExactActive }">
-						<a :href="href" @click="navigate" class="menu-item">
+					<router-link :to="linkCreator(this.$i18n.locale, '')" custom v-slot="{ navigate, href, isExactActive }">
+						<a :href="linkCreator(this.$i18n.locale, href)" @click="navigate" class="menu-item">
 							<i :class="[isExactActive == true ? 'fa-solid' : 'fa-regular', 'fa-circle']"></i>
 							{{ $t('header.anasayfa')}}
 						</a>
@@ -15,7 +15,7 @@
 				</li>
 
 				<li class="about">
-					<router-link to="/hakkimizda" custom v-slot="{ navigate, href, isExactActive }">
+					<router-link :to="linkCreator(this.$i18n.locale, 'hakkimizda')" custom v-slot="{ navigate, href, isExactActive }">
 						<a :href="href" @click="navigate" class="menu-item">
 							<i :class="[isExactActive == true ? 'fa-solid' : 'fa-regular', 'fa-circle']"></i>
 							{{ $t('header.hakkimizda')}}
@@ -24,22 +24,22 @@
 
 					<div class="down-content1">
 						<div class="content">
-						<router-link to="/who-are-we" custom v-slot="{ navigate, href }">
-							<a :href="href" @click="navigate">
+						<router-link :to="linkCreator(this.$i18n.locale, 'who-are-we')" custom v-slot="{ navigate, href }">
+							<a :href="linkCreator(this.$i18n.locale, href)" @click="navigate">
 								{{ $t('header.bizkimiz')}}
 							</a>
 						</router-link>
 						</div>
-                         <div class="content">
-						<router-link to="/our-aims" custom v-slot="{ navigate, href }">
-							<a :href="href" @click="navigate">
+						 <div class="content">
+						<router-link :to="linkCreator(this.$i18n.locale, 'our-aims')" custom v-slot="{ navigate, href }">
+							<a :href="linkCreator(this.$i18n.locale, href)" @click="navigate">
 								{{ $t('header.hedeflerimiz')}}
 							</a>
 						</router-link>
 						</div>
-                  <div class="content">
-						<router-link to="/patent" custom v-slot="{ navigate, href }">
-							<a :href="href" @click="navigate">
+				  <div class="content">
+						<router-link :to="linkCreator(this.$i18n.locale, 'patent')" custom v-slot="{ navigate, href }">
+							<a :href="linkCreator(this.$i18n.locale, href)" @click="navigate">
 								{{ $t('header.patent')}}
 							</a>
 						</router-link>
@@ -49,7 +49,7 @@
 				</li>
 
 				<li class="ürün">
-					<router-link to="/products" custom v-slot="{ navigate, href }">
+					<router-link :to="linkCreator(this.$i18n.locale, 'products')" custom v-slot="{ navigate, href }">
 						<a :href="href" @click="navigate" class="menu-item">
 							<i :class="[isExactActive == true ? 'fa-solid' : 'fa-regular', 'fa-circle']"></i>
 							{{ $t('header.urunler')}}
@@ -57,37 +57,36 @@
 					</router-link>
 					<div class="down-content2">
 						
-					
-					<div class="content">
+						<div class="content">
 
-						<router-link to="/co-link" custom v-slot="{ navigate, href }">
-							<a :href="href" @click="navigate">
-								coLink
-							</a>
-						</router-link>
+							<router-link :to="linkCreator(this.$i18n.locale, 'co-link')" custom v-slot="{ navigate, href }">
+								<a :href="linkCreator(this.$i18n.locale, href)" @click="navigate">
+									coLink
+								</a>
+							</router-link>
+							</div>
+
+							<div class="content">
+							<router-link :to="linkCreator(this.$i18n.locale, 'co-light')" custom v-slot="{ navigate, href }">
+								<a :href="linkCreator(this.$i18n.locale, href)" @click="navigate">
+									coLighting
+								</a>
+							</router-link>
+							</div>
+
+						<div class="content">
+							<router-link :to="linkCreator(this.$i18n.locale, 'co-diver')" custom v-slot="{ navigate, href }">
+								<a :href="linkCreator(this.$i18n.locale, href)" @click="navigate">
+									coDiver
+								</a>
+							</router-link>
+
 						</div>
-
-	                      <div class="content">
-						<router-link to="/co-light" custom v-slot="{ navigate, href }">
-							<a :href="href" @click="navigate">
-								coLighting
-							</a>
-						</router-link>
-						</div>
-
-                    <div class="content">
-						<router-link to="/co-diver" custom v-slot="{ navigate, href }">
-							<a :href="href" @click="navigate">
-								coDiver
-							</a>
-						</router-link>
-
-					</div>
 					</div>
 				</li>
 
 				<li class="proje">
-					<router-link to="/projects" custom v-slot="{ navigate, href }">
+					<router-link :to="linkCreator(this.$i18n.locale, 'projects')" custom v-slot="{ navigate, href }">
 						<a :href="href" @click="navigate" class="menu-item">
 							<i :class="[isExactActive == true ? 'fa-solid' : 'fa-regular', 'fa-circle']"></i>
 							{{ $t('header.projeler')}}
@@ -97,36 +96,36 @@
 
 						<div class="content">
 
-						<router-link to="/Project1" custom v-slot="{ navigate, href }">
-							<a :href="href" @click="navigate">
-								{{ $t('header.sualtı')}}
-							</a>
-						</router-link>
+							<router-link :to="linkCreator(this.$i18n.locale, 'Project1')" custom v-slot="{ navigate, href }">
+								<a :href="linkCreator(this.$i18n.locale, href)" @click="navigate">
+									{{ $t('header.sualtı')}}
+								</a>
+							</router-link>
 
-						</div>
+							</div>
 
 
-                          <div class="content">
-						<router-link to="/Project2" custom v-slot="{ navigate, href }">
-							<a :href="href" @click="navigate">
-								{{ $t('header.denizaltı')}}
-							</a>
-						</router-link>
-						</div>
+							<div class="content">
+							<router-link :to="linkCreator(this.$i18n.locale, 'Project2')" custom v-slot="{ navigate, href }">
+								<a :href="linkCreator(this.$i18n.locale, href)" @click="navigate">
+									{{ $t('header.denizaltı')}}
+								</a>
+							</router-link>
+							</div>
 
-						 <div class="content">
-						<router-link to="/acusto" custom v-slot="{ navigate, href }">
-							<a :href="href" @click="navigate">
-								{{ $t('header.akusto')}}
-							</a>
-						</router-link>
-						</div>
-						<div class="content">
-						<router-link to="/Project4" custom v-slot="{ navigate, href }">
-							<a :href="href" @click="navigate">
-								{{ $t('header.helikopter')}}
-							</a>
-						</router-link>
+							<div class="content">
+							<router-link :to="linkCreator(this.$i18n.locale, 'Acusto')" custom v-slot="{ navigate, href }">
+								<a :href="linkCreator(this.$i18n.locale, href)" @click="navigate">
+									{{ $t('header.akusto')}}
+								</a>
+							</router-link>
+							</div>
+							<div class="content">
+							<router-link :to="linkCreator(this.$i18n.locale, 'Projetct4')" custom v-slot="{ navigate, href }">
+								<a :href="linkCreator(this.$i18n.locale, href)" @click="navigate">
+									{{ $t('header.helikopter')}}
+								</a>
+							</router-link>
 						</div>
 
 					</div>
@@ -134,7 +133,7 @@
 
 				<li class="biz">
 					
-					<router-link to="/contact-us" custom v-slot="{ navigate, href }">
+					<router-link :to="linkCreator(this.$i18n.locale, 'contact-us')" custom v-slot="{ navigate, href }">
 						<a :href="href" @click="navigate" class="menu-item">
 							<i :class="[isExactActive == true ? 'fa-solid' : 'fa-regular', 'fa-circle']"></i>
 							{{ $t('header.bize')}}
@@ -145,8 +144,8 @@
 					<div class="down-content4">
 						<div class="content">
 
-						<router-link to="/human" custom v-slot="{ navigate, href }">
-							<a :href="href" @click="navigate">
+						<router-link :to="linkCreator(this.$i18n.locale, 'human')" custom v-slot="{ navigate, href }">
+							<a :href="linkCreator(this.$i18n.locale, href)" @click="navigate">
 								{{ $t('header.insan')}}
 							</a>
 						</router-link>
@@ -188,6 +187,14 @@ export default {
 	},
 	components: {
 		LanguageSwitcher
+	},
+	methods: {
+		linkCreator: function (locale, route) {
+			let result = '/'+locale+'/'
+			var str = route.toLowerCase()
+			result += str
+			return result
+		}
 	}
 }
 
@@ -310,16 +317,16 @@ function scrollFunction() {
 	text-decoration: none;
 	display: block;
 	font-family: 'DM Sans', sans-serif;
-    display: inline-block;
-    background-image: linear-gradient(#2b2b2b, #2b2b2b);
-    background-size: 0% 1px;/*                        ↓ y position of underline. you can change as 50% to see it. */
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    transition: background 0.3s linear;
+	display: inline-block;
+	background-image: linear-gradient(#2b2b2b, #2b2b2b);
+	background-size: 0% 1px;/*                        ↓ y position of underline. you can change as 50% to see it. */
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	transition: background 0.3s linear;
 
 
 	
-    
+	
 	
 
 
