@@ -21,6 +21,7 @@
         data: function () {
             return {
                 images: [
+                    
                     require('../assets/images/dalgıc.jpeg'),
                     require('../assets/images/gemi2.jpeg'),
                     require('../assets/images/mühendis.jpeg'),
@@ -52,6 +53,7 @@
 </script>
 
 <style>
+
     .slides img {
         width: 100%;
     }
@@ -70,7 +72,7 @@
         margin: 0 0;
         padding-right: 0px;
         padding-left: 0px;
-         animation: slide 5s ease 0s 1 normal backwards;
+        animation: slide 5s ease 0s 1 normal backwards;
     }
 
     .slides {

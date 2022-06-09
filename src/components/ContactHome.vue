@@ -31,6 +31,7 @@
 
 	.contact {
 		width: 100%;
+	
 		background: linear-gradient(-45deg, #E8B892, #6170B1, #E2B48E, #6170B1);
 		animation: change 10s ease-in-out infinite;
 		height: 500px;

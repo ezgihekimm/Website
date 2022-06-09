@@ -1,7 +1,7 @@
 <template>
-    <div class="container-fluid footer">
+    <div class="container-fluid footer" id="footer1">
         <div class="row">
-            <div class="col-md-3 first">
+            <div class="col-md-3 first" id="item1">
                 <h5 class="baslik">
                     {{ $t('footer.bau')}} <h5 class="baslik mb-5">{{ $t('footer.bau1')}}</h5>
                 </h5>
@@ -14,9 +14,9 @@
                
 
             </div>
-            <div class="col-md-3 second mt-4">
-                <ul class="info1 ">
-                    <li>
+            <div class="col-md-3 second mt-4" id="info">
+                <ul class="info1 " id="info1">
+                    <li >
                         <router-link to="/hakkimizda" custom v-slot="{ navigate, href }">
                             <a :href="href" @click="navigate" class="menu-item">
 
@@ -26,22 +26,22 @@
                     </li>
                     <li>
                         <router-link to="/who-are-we" custom v-slot="{ navigate, href }">
-                            <a :href="href" @click="navigate">
+                            <a :href="href" @click="navigate" class="head" >
                                 {{ $t('header.bizkimiz')}}
                             </a>
                         </router-link>
                     </li>
                     <li><a href="#">haberler</a></li>
-                    <li><a href="#">insan kaynakları</a></li>
+                    <li><a href="#" class="head1">insan kaynakları</a></li>
                      
 
                 </ul>
 
             </div>
-            <div class="col-md-3 third mt-4">
+            <div class="col-md-3 third mt-4" id="info">
 
-                <ul class="info1">
-                    <li>
+                <ul class="info1" id="info1">
+                    <li >
                         <router-link to="/products" custom v-slot="{ navigate, href }">
                             <a :href="href" @click="navigate" class="menu-item">
 
@@ -59,7 +59,7 @@
                     </li>
                     <li>
                         <router-link to="/contact-us" custom v-slot="{ navigate, href }">
-                            <a :href="href" @click="navigate" class="menu-item">
+                            <a :href="href" class="head2" @click="navigate" >
                                 
                                 {{ $t('header.bize')}}
                             </a>
@@ -70,8 +70,8 @@
 
 
             </div>
-            <div class="col-md-1 four">
-                <h5 class="baslik mt-5">{{ $t('footer.sosyal')}}</h5>
+            <div class="col-md-1 four" id="info">
+                <h5 class="baslik ">{{ $t('footer.sosyal')}}</h5>
 
             </div>
         </div>
@@ -88,17 +88,29 @@
 <style scoped>
     .footer {
         width: 100%;
-        height: 420px;
+        max-width: 1900px;
         background-color: #121619;
         font-family: 'DM Sans', sans-serif;
         }
 
     .first {
-        height: 300px;
-        margin-left: 100px;
-        margin-top: 50px;
-        text-align: justify;
+       
+      padding: 5%;
+    text-align: justify;
     }
+.head{
+    width: 100%;
+    max-width: 100px;
+}
+.head1 , .head2{
+    width: 100%;
+    max-width: 142px;
+}
+.four{
+    padding: 5%;
+    width: 25%;
+    max-width:650px;
+}
 
 
     .baslik {
@@ -117,6 +129,7 @@
         color: rgb(184, 184, 184);
         margin-bottom: 8px;
         font-size: 15px;
+     
     }
 
     .info1 li a {
@@ -128,9 +141,6 @@
         font-family: 'DM Sans', sans-serif;
         font-size: 15px;
         text-transform: capitalize;
-
-
-
     }
 
     .info1 li {
@@ -150,6 +160,7 @@
     .info1 {
         margin-top: 50px;
         list-style-type: none;
+        padding: 5%;
     }
 
     ul li {
@@ -175,5 +186,20 @@
         color: rgb(233, 229, 229);
         ;
 
+    }
+
+    @media screen and ( max-width: 1200px) {
+        #footer{
+            width:100%;
+        }
+         
+         #info{
+             width: 100%;
+             
+         }
+         #item1{
+             width: 100%;
+
+         }
     }
 </style>

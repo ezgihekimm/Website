@@ -41,7 +41,7 @@
             </div>
                <div class="col-md-4">
                 <div class="img">
-                    <img src="@/assets/images/Resim1.png" alt="">
+                    <img src="@/assets/images/2.png" alt="">
                 </div>
             </div>
 
@@ -133,7 +133,7 @@
 
     .img {
         display: flex;
-        width: 100%;
+       width: 100%;
         flex-direction: row;
         justify-content: center;
 
@@ -155,7 +155,10 @@
     }
 
     .img img {
-        width: 75%;
+       width: 200%;
+       object-fit: cover;
+      
+       
     }
 
     ._head {

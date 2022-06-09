@@ -62,32 +62,29 @@
 </script>
 
 <style scoped>
-
-
     .containerr {
 
         width: 100%;
-        max-width: 1600px;
+        max-width: 1920px;
         font-family: 'DM Sans', sans-serif;
         position: relative;
         padding: 5%;
         display: flex;
         background-color: #121619;
-       
 
 
     }
-    .Head{
-        color:white;
+
+    .Head {
+        color: white;
         letter-spacing: 0.5px;
         text-align: center;
         display: flex;
         justify-content: center;
         padding-bottom: 20px;
-        
     }
-  
-    .info{
+
+    .info {
         color: rgb(183, 179, 179);
     }
 
@@ -95,17 +92,17 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        max-width: 1600px;
+        max-width: 1920px;
     }
 
-   ._info {
-        width: 20%;
-        max-width:300px ;
+    ._info {
+        width: 100%;
+        max-width: 300px;
         display: flex;
         flex-direction: column;
         transition: transform 250ms ease-in-out;
         text-align: center;
- 
+
 
     }
 
@@ -113,9 +110,9 @@
         transform: translateY(-30px);
     }
 
-    
 
-    
+
+
 
     .img {
 
@@ -124,16 +121,19 @@
         padding-bottom: 30px;
         display: flex;
         justify-content: end;
-      }
+    }
+
     .img img {
         width: 60%;
+        max-width: 150px;
         height: auto;
         object-fit: cover;
         display: flex;
         justify-content: center;
-       
+
 
     }
+
     .img1 {
 
         flex-direction: row;
@@ -141,23 +141,32 @@
         padding-bottom: 30px;
         display: flex;
         justify-content: center;
-      }
+    }
+
     .img1 img {
         width: 60%;
+        max-width: 150px;
         height: auto;
         object-fit: cover;
         display: flex;
         justify-content: center;
-       
+
 
     }
-    @media screen and (max-width: 1200px){
-        #info{
+
+    @media screen and (max-width: 1200px) {
+        #info {
             width: 100%;
+            padding-bottom: 7%;
+            
         }
-    #_container{
-        width: 100%;
-    }
+
+        #_container {
+            width: 100%;
         
+        }
+
     }
+
+
 </style>
