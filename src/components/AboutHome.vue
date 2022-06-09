@@ -132,7 +132,7 @@
         display: flex;
         padding: 15px 32px;
         color: white;
-        width: 35%;
+        width: 45%;
         max-height: 40px; 
         margin-top: 30px;
        

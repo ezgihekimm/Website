@@ -3,7 +3,7 @@
         <div class="head">
 
             <h5 class="head1">
-                <div class="dot"></div>TÜBİTAK TEYDEB-1501
+                <div class="dot"></div> <div class="div"></div>TÜBİTAK TEYDEB-1501
             </h5>
         </div>
 
@@ -70,6 +70,8 @@
 
         </div>
 
+        
+
 
 
 
@@ -79,16 +81,31 @@
     </div>
 </template>
 
+  <script>
+
+   
+    
+</script>
+
+
 <style scoped>
     ._container {
         background-color: #121619;
         width: 100%;
-        height: 100vh;
+        max-height: 140vh;
         margin-bottom: 100px;
         font-family: 'DM Sans', sans-serif;
-        color: aliceblue,
+        color: aliceblue;
+        max-height: 700vh;
+   
+
+        
 
 
+    }
+    .div
+    {
+        width:5px;
     }
     ._row{
         padding-top:5%;
@@ -116,7 +133,6 @@
 
     .img {
         display: flex;
-      
         width: 100%;
         flex-direction: row;
         justify-content: center;
@@ -139,7 +155,7 @@
     }
 
     .img img {
-        width: 70%;
+        width: 75%;
     }
 
     ._head {
@@ -172,7 +188,7 @@
     .info-ul li {
         display: flex;
         align-items: center;
-        padding-bottom: 50px;
+        padding-bottom: 45px;
     }
 
     .info {

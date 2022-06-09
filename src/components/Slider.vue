@@ -70,7 +70,7 @@
         margin: 0 0;
         padding-right: 0px;
         padding-left: 0px;
-         animation: slide 2s ease 0s 2 normal backwards;
+         animation: slide 5s ease 0s 1 normal backwards;
     }
 
     .slides {
@@ -79,10 +79,7 @@
         height: 100vmin;
         padding-right: 0px;
         padding-left: 0px;
-        animation: slide 2s ease 0s 2 normal backwards;
-           
-
-
+        animation: slide 2s ease 0s 1 normal backwards;
     }
 
     .slides li {
@@ -98,13 +95,13 @@
         height: 100vmin;
         object-fit: cover;
         object-position: top;
-        animation: slide 2s ease 0s 2 normal ;
+        animation: slide 2s ease 0s 1 normal ;
 
     }
 
     .slides li:target {
         z-index: 3;
-        animation: slide 2s ease 0s 2 normal ;
+        animation: slide 2s ease 0s 1 normal ;
 
 
     }

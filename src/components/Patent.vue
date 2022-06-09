@@ -2,7 +2,8 @@
     <div class="container-fluid con">
   <div class="row Head">
 
-      <h1>Patentler</h1>
+      <h1 style="color:aliceblue">Patentler</h1>
+       <hr style="color:aliceblue">
   </div>
 
 
@@ -141,15 +142,19 @@
     padding-right: 5%;
 }
 .Head{
-    background-color: white;
+    background-color: #121619;
     height: 200px;
     width: 100%;
-    margin: 0 0 ;
+   padding-left: 5%;
     display: flex;
-    align-items: center;
+   align-content: center;
+ 
+}
+.Head h1{
+   
     padding-left: 5%;
-    
-  
+}
+.head{
 
 }
 .Head h1{
@@ -205,6 +210,7 @@
         max-height: 30px;
         font-family: "DM Sans", sans-serif;
         margin-left: 5px;
+        margin-bottom: 10px;
 
 
     }
@@ -248,6 +254,7 @@
         padding: 20px;
         display: flex;
         justify-content: start;
+
         
         
     }
@@ -275,4 +282,6 @@
     .head h2:hover {
         background-size: 100% 1px;
     }
+ 
+    
 </style>

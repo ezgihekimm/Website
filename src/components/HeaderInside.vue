@@ -107,7 +107,7 @@
 
 
                           <div class="content">
-						<router-link to="/under-sea" custom v-slot="{ navigate, href }">
+						<router-link to="/Project2" custom v-slot="{ navigate, href }">
 							<a :href="href" @click="navigate">
 								{{ $t('header.denizaltı')}}
 							</a>
@@ -122,7 +122,7 @@
 						</router-link>
 						</div>
 						<div class="content">
-						<router-link to="/helicopter" custom v-slot="{ navigate, href }">
+						<router-link to="/Project4" custom v-slot="{ navigate, href }">
 							<a :href="href" @click="navigate">
 								{{ $t('header.helikopter')}}
 							</a>

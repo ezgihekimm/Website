@@ -8,13 +8,13 @@ import Products from '../pages/Products'
 import CoLink from '../pages/CoLink'
 import CoLight from '../pages/CoLight'
 import CoDiver from '../pages/CoDiver'
-import UnderWater from '../pages/UnderWater'
 import UnderSea from '../pages/UnderSea'
 import Acusto from '../pages/Acusto'
-import Helicopter from '../pages/Helicopter'
 import ContactUs from '../pages/ContactUs'
 import Human from '../pages/Human'
 import Project1 from '../pages/Project1'
+import Project2 from '../pages/Project2'
+import Project4 from '../pages/Project4'
 
 
 
@@ -28,13 +28,12 @@ const routes = [
     { path: '/co-link', component: CoLink},
     { path: '/co-light', component: CoLight},
     { path: '/co-diver', component: CoDiver},
-    { path: '/under-water', component: UnderWater},
-    { path: '/under-sea', component: UnderSea},
     { path: '/acusto', component: Acusto},
-    { path: '/helicopter', component: Helicopter},
     { path: '/contact-us', component: ContactUs},
     { path: '/human', component: Human},
-    { path : '/Project1', component:Project1}
+    { path: '/Project1', component:Project1},
+    { path: '/Project2',component:Project2},
+    { path: '/Project4',component:Project4}
 
 ]
 
