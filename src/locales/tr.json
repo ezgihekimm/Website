@@ -19,7 +19,11 @@
         "bau": "BAU İNOVASYON VE",
 		"bau1": "DANIŞMANLIK A.Ş",
 		"hak": "Hakkımızda",
-		"sosyal": "SOSYAL MEDYA HESAPLARIMIZ"
+		"sosyal": "SOSYAL MEDYA HESAPLARIMIZ",
+		"adres1":"Adres: ",
+		"adres" : "Mithatpaşa Mah. Rumeli Yolu Cad. Bahçeşehir Üniversitesi Eğitim Binası Blok No: 35/24 İç Kapı No: 6 Eyüpsultan/İSTANBUL",
+		"telefon" : "Telefon: ",
+		"bize" : "Bize Ulaşın"
     }, 
 	"home":{
 		"biz":"BAU A.Ş.; İlk etapta 2008 yılında Bahçeşehir Üniversitesi bünyesinde Teknoloji Geliştirme Birimi olarak faaliyetlerine başlamıştır. Sonrasında 2012 yılında ise Proje Geliştirme Birimi ismini alarak 1.M Euro bütçe ile “Denizaltı Helikopter Arasında Güvenli Elektro Optik Haberleşme Sistemi” adlıSavunma Sanayi Müsteşarlığı tarafından desteklenen Teknoloji Kazanım projesini yürüttü.",
@@ -64,7 +68,7 @@
 		"6":"Su kalitesinin incelenmesi",
 		"7":"Tuzluluk oranının tuz cinsine bağlı olarak hassas şekilde incelenmesi",
 		"8":"Türk denizlerinde optik iletkenlik haritalarının çıkarılması",
-		"amac":" Projenin amacı; deniz veya göl sularının optik iletkenliğinin, dalga boyuna bağlı olarak ölçülmesidir."
+		"amac":" Projenin amacı; deniz veya göl sularının optik iletkenliğinin, dalga boyuna bağlı olarak ölçülmesidir.Bu ölçüm sonucunda elde edilen grafiğin analiz edilmesi ile bize sağlayabileceği bilgiler ve kullanılabileceği alanlar:"
 	},
 	"project2":{
 		"baslik":"DENİZALTILARDA ÖZ AKUSTİK KESTİRİMİ VE AKUSTİK İZLEME/UYARI SİSTEMİ",

@@ -1,5 +1,5 @@
 <template>
-    <div class=" container-fluid _container">
+    <div class=" container-fluid _container" id="_container">
         <div class="head">
 
             <h5 class="head1">
@@ -17,7 +17,7 @@
         </div>
         <div class="row _row">
          
-            <div class="col-md-4">
+            <div class="col-md-4" id="item">
                     <div class="info-ul">
             <li>
                 <div class="dot">1</div>
@@ -39,13 +39,13 @@
         </div>
 
             </div>
-               <div class="col-md-4">
+               <div class="col-md-4" id="item">
                 <div class="img">
-                    <img src="@/assets/images/2.png" alt="">
+                    <img src="@/assets/images/coSpectro.png" alt="">
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4" id="item">
                     <div class="info-ul">
             <li>
                 <div class="dot">5</div>
@@ -92,11 +92,12 @@
     ._container {
         background-color: #121619;
         width: 100%;
-        max-height: 140vh;
-        margin-bottom: 100px;
+        max-width: 1920px;
+       margin-bottom: 100px;
         font-family: 'DM Sans', sans-serif;
         color: aliceblue;
-        max-height: 700vh;
+        padding:5%;
+     
    
 
         
@@ -114,7 +115,7 @@
     h5 {
         color: rgb(229, 236, 243);
         font-family: 'DM Sans', sans-serif;
-        padding-top: 50px;
+       
     }
 
     h4 {
@@ -128,14 +129,16 @@
         justify-content: center;
 
     }
+ 
 
 
 
     .img {
         display: flex;
-       width: 100%;
+         width: 100%;
         flex-direction: row;
         justify-content: center;
+        
 
 
 
@@ -145,18 +148,20 @@
     .info1 {
         display: flex;
         justify-content: center;
-
+        
     }
 
     .info1 p {
         color: rgb(169, 167, 167);
         text-align: center;
-        width: 20%
+        width: 35%;
     }
 
     .img img {
-       width: 200%;
+       width: 45%;
+       max-width: 250px;
        object-fit: cover;
+       
       
        
     }
@@ -251,5 +256,15 @@
         font-size: 12px;
         color: rgb(229, 236, 243);
         background-color: #121619;
+    }
+
+
+    @media screen and (max-width:1200px){
+    
+        #item{
+            width: 100%;
+        }
+
+        
     }
 </style>

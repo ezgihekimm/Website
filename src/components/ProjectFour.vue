@@ -82,7 +82,8 @@ export default {
     ._container {
         background-color: #121619;
         width: 100%;
-        max-height: 300vh;
+        max-width: 1920px;
+        padding: 5%;
         margin-bottom: 100px;
         font-family: 'DM Sans', sans-serif;
         color: aliceblue;
@@ -113,7 +114,7 @@ export default {
     h5 {
         color: rgb(229, 236, 243);
         font-family: 'DM Sans', sans-serif;
-        padding-top: 50px;
+     
     }
 
     h4 {

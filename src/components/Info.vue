@@ -52,6 +52,9 @@
                 </div>
             </div>
         </div>
+
+
+        
     </div>
 </template>
 
@@ -59,6 +62,7 @@
     export default {
 
     }
+   
 </script>
 
 <style scoped>
@@ -97,7 +101,7 @@
 
     ._info {
         width: 100%;
-        max-width: 300px;
+        max-width: 250px;
         display: flex;
         flex-direction: column;
         transition: transform 250ms ease-in-out;

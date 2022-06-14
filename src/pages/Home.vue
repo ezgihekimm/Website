@@ -3,7 +3,6 @@
 	<Slider />
 	<Yazi />
     <about-home/> 
-	
 	<Info />
     <ContactHome/>
 	<Footer />
@@ -32,6 +31,9 @@ import Footer from '../components/Footer'
 
 
 
+
+
+
 export default {
 	name: 'App',
 	components: {
@@ -40,7 +42,6 @@ export default {
 		Yazi,
         ContactHome,
         AboutHome,
-	
 		Info,
 		Footer
 

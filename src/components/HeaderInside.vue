@@ -121,7 +121,7 @@
 							</router-link>
 							</div>
 							<div class="content">
-							<router-link :to="linkCreator(this.$i18n.locale, 'Projetct4')" custom v-slot="{ navigate, href }">
+							<router-link :to="linkCreator(this.$i18n.locale, 'Project4')" custom v-slot="{ navigate, href }">
 								<a :href="linkCreator(this.$i18n.locale, href)" @click="navigate">
 									{{ $t('header.helikopter')}}
 								</a>

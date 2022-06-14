@@ -3,7 +3,7 @@
    <div class="head">
 
             <h5 class="head1">
-                <div class="dot"></div> <div class="div"></div>ISATAR
+                <div class="dot"></div> <div class="div"></div>DAKIS
             </h5>
         </div>
 

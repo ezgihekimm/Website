@@ -1,5 +1,6 @@
 <template>
 	<Header /> 
+	<Map />
     <ContactPage />
 	<Footer />
 </template>
@@ -8,6 +9,7 @@
 
 import Header from '../components/Header'
 import ContactPage from '../components/ContactPage.vue'
+import Map from '../components/Map.vue'
 import Footer from '../components/Footer'
 
 export default {
@@ -15,6 +17,7 @@ export default {
 	components: {
 		Header,
         ContactPage,
+		Map,
 		Footer,
 	},
 }

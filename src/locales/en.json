@@ -20,7 +20,10 @@
         "bau": "BAU INNOVATION AND",
         "bau1": "CONSULTANCY INC.",
         "hak": "About Us",
-        "sosyal": "OUR SOCIAL MEDIA"
+        "sosyal": "OUR SOCIAL MEDIA",
+        "telefon": "Phone: ",
+        "adres1" : "Adress: ",
+        "bize" : "Contact Us"
     }, 
     "home":{
         "biz":"BAU Inc.; In the first stage, it started its activities as a Technology Development Unit with in Bahçeşehir University in 2008.Afterwards, in 2012, he took the name of Project Development Unit and carried out the Technology Acquisition project supported by the Undersecretariat of Defense Industry called Safe Electro Optical Communication System Between Submarine Helicopters with a budget of 1.M Euros.",
