@@ -289,6 +289,7 @@ function scrollFunction() {
 	flex-direction: row;
 	align-items: center;
 	transition: color 0.5s;
+
 }
 
 .list ul li a.black {
@@ -348,8 +349,6 @@ function scrollFunction() {
 	z-index: 1;
 	font-size: 14px;
 	padding: 20px;
-   
-
 }
 
 
