@@ -10,6 +10,7 @@
 
 
     </div>
+    
     <button @click="previousImage" class="btn btn-primary"
         :disabled="currentImage === 0">Previous</button>
     <button @click="nextImage" class="btn btn-primary"

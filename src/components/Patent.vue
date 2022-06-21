@@ -6,7 +6,6 @@
             <hr style="color:aliceblue">
         </div>
 
-
         <div class=" _patent">
             <div class="head">
                 <div class="dot">1</div>
@@ -21,10 +20,7 @@
             </div>
 
             <hr style="color:aliceblue">
-        </div>
-
-
-
+        </div> 
         <div class=" _patent">
             <div class=" head">
                 <div class="dot">2</div>
