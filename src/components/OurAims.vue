@@ -2,7 +2,8 @@
     <div class="container-fluid us">
         <div class="row head">
             <div>
-                <h1 class=" animate__animated animate__fadeInLeft mb-4" style="font-size:50px;  ">{{$t('aims.hedeflerimiz')}}</h1>
+                <h1 class=" animate__animated animate__fadeInLeft mb-4" style="font-size:50px;  ">
+                    {{$t('aims.hedeflerimiz')}}</h1>
 
             </div>
 
@@ -10,12 +11,7 @@
                 <img src="@/assets/images/engin2.jpg" alt="">
             </div>
 
-
-
         </div>
-        <yazi> </yazi>
-
-
 
         <div class="info2">
             <h2 class="head1">{{$t('aims.hedeflerimiz')}}</h2>
@@ -41,21 +37,17 @@
 </template>
 
 <script>
-
-    import Yazi from './Yazi.vue'
     import 'animate.css'
 
     export default {
         components: {
-            Yazi
+
         },
 
     }
 </script>
 
 <style scoped>
-    
-
     .us {
         padding-top: 10px;
     }
@@ -63,7 +55,6 @@
     .head1 {
         display: flex;
         justify-content: center;
-        padding-top: 50px;
 
     }
 
@@ -85,8 +76,13 @@
         padding: 5%;
         color: rgb(46, 46, 46);
         font-weight: bolder;
-        
-       
+
+
+
+    }
+
+    .info2{
+        padding-bottom: 5%;
 
     }
 
@@ -98,13 +94,9 @@
 
     .info-ul li {
         display: flex;
-        padding-bottom: 5px;
-    }
-
-    .info-ul li {
-        display: flex;
         align-items: center;
-        padding-bottom: 15px;
+        padding-bottom: 50px;
+        font-size: large;
     }
 
     .info {
@@ -124,6 +116,4 @@
         margin-right: 10px;
         font-size: 14px;
     }
-
-  
 </style>

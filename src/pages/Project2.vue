@@ -1,7 +1,6 @@
 <template>
 	<Header />
     <ProjectSecond/>
-    <Yazi/>
 	<Footer />
 </template>
 
@@ -9,7 +8,6 @@
 
 import Header from '../components/Header'
 import ProjectSecond from '../components/ProjectSecond'
-import Yazi from '../components/Yazi.vue'
 import Footer from '../components/Footer'
 
 
@@ -18,7 +16,6 @@ export default {
 	components: {
 		Header,
         ProjectSecond,
-        Yazi,
 		Footer,
 	},
 }

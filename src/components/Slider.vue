@@ -2,13 +2,9 @@
     <div class="container-fluid _con">
         <ul class="slides ">
             <li>
-
-                <img :src="images[currentImage]" width="400" height="500"><br /><br />
+                <img :src="images[currentImage]" width="400" height="500">
             </li>
         </ul>
-
-
-
     </div>
     
     <button @click="previousImage" class="btn btn-primary"

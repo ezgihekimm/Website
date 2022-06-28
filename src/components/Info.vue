@@ -101,7 +101,7 @@
 
     ._info {
         width: 100%;
-        max-width: 250px;
+        max-width: 270px;
         display: flex;
         flex-direction: column;
         transition: transform 250ms ease-in-out;
