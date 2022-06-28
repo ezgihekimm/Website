@@ -28,10 +28,9 @@
 		data: function () {
 			return {
 				images: [
-					require('../assets/images/dalgıc.jpeg'),
-					require('../assets/images/gemi2.jpeg'),
-					require('../assets/images/mühendis.jpeg'),
-					require('../assets/images/yetenk.jpeg'),
+					require('../assets/images/slider/h9-img-02.jpg'),
+					require('../assets/images/slider/h9-img-03.jpg'),
+					require('../assets/images/slider/h9-rev-img-01.jpg'),
 				],
 				currentImage: 0,
 				disabled: false
