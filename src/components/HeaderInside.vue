@@ -159,18 +159,20 @@
 
 		</div>
 
-		<div>
+		<!-- <div>
 			<language-switcher />
+		</div> -->
+
+		<div>
+			<MenuIcon :transparent="transparent" @toggleMenu="$emit('toggleMenu')" />
 		</div>
 
-		<div class="menu-icon">
-			MENU
-		</div>
 	</div>
 </template>
 
 <script>
 import LanguageSwitcher from './LanguageSwitcher.vue'
+import MenuIcon from './MenuIcon.vue'
 
 export default {
 	name: "HeaderInside",
@@ -186,7 +188,11 @@ export default {
 		}
 	},
 	components: {
-		LanguageSwitcher
+		LanguageSwitcher,
+		MenuIcon
+	},
+	created(){
+		console.log("transparent", this.transparent)
 	},
 	methods: {
 		linkCreator: function (locale, route) {
@@ -194,6 +200,9 @@ export default {
 			var str = route.toLowerCase()
 			result += str
 			return result
+		},
+		test(){
+			console.log("test")
 		}
 	}
 }

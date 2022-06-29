@@ -16,6 +16,7 @@
 
 <a href="#" @click="previousImage">Geri</a>
 <a href="#" @click="nextImage">Ileri</a>
+
 </template>
 
 <script>
