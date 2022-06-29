@@ -16,8 +16,8 @@
 		</ul>
 	</div>
 	
-	<a @click="previousImage" >Geri</a>
-	<a @click="nextImage">Ileri</a>
+	<a href="#" @click="previousImage" >Geri</a>
+	<a href="#" @click="nextImage">Ileri</a>
 	
 
 </template>
