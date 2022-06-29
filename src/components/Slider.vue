@@ -1,17 +1,8 @@
 <template>
 	<div class="container-fluid _con">
 		<ul class="slides">
-			<li :class="{active: currentImage == 0, noactive: currentImage != 0}">
-				<img :src="images[0]" id="slide1">
-			</li>
-			<li :class="{active: currentImage == 1, noactive: currentImage != 1}">
-				<img :src="images[1]" id="slide2">
-			</li>
-			<li :class="{active: currentImage == 2, noactive: currentImage != 2}">
-				<img :src="images[2]" id="slide3">
-			</li>
-			<li :class="{active: currentImage == 3, noactive: currentImage != 3}">
-				<img :src="images[3]" id="slide4">
+			<li v-for="(slide, index) in images" :key="index" :class="{active: currentImage == index, noactive: currentImage != index}">
+				<img :src="images[index]">
 			</li>
 		</ul>
 	</div>
