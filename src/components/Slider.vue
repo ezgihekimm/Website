@@ -9,8 +9,6 @@
 	
 	<a @click="previousImage" >Geri</a>
 	<a @click="nextImage">Ileri</a>
-	
-
 </template>
 
 <script>
