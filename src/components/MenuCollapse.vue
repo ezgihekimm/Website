@@ -1,64 +1,18 @@
 <template>
 <div class="_container">
 	<div id="mySidenav" class="sidenav">
-		<div class="container" style="width:250px;">
-
-			<div class="row" style="margin-bottom:60px">
-
-				<div class="col d-flex justify-content-start ms-4">
-					<h3 class="">YÖNLENDİRME</h3>
-				</div>
-
+		<div class="_inside_container" style="container">
+			<div class="closeContainer" @click="closeNav">
+				<img src="@/assets/images/close.png" alt="" class="close">
 			</div>
+			<img src="@/assets/images/logo.png" alt="" class="logo">
+			
+			<div class="title">BAU İnovasyon ve Danışmanlık A.Ş</div>
 
-			<div class="row ">
-				<div class="col-md-12 d-flex justify-content-start ms-4">
-					<a href="#">HAKKIMIZDA</a>
-				</div>
-
-			</div>
-
-			<div class="row ">
-				<div class="col-md-12 d-flex justify-content-start ms-4">
-					<a href="#">HEDEFLERİMİZ</a>
-				</div>
-
-			</div>
-			<div class="row ">
-				<div class="col-md-12 d-flex justify-content-start ms-4">
-					<a href="#">PATENTLER</a>
-				</div>
-
-			</div>
-			<div class="row ">
-				<div class="col-md-12 d-flex justify-content-start ms-4">
-					<a href="#">ÜRÜNLER</a>
-				</div>
-
-			</div>
-			<div class="row ">
-				<div class="col-md-12 d-flex justify-content-start ms-4">
-					<a href="#">PROJELER</a>
-				</div>
-
-			</div>
-			<div class="row ">
-				<div class="col-md-12 d-flex justify-content-start ms-4">
-					<a href="#">BİZE ULAŞIN</a>
-				</div>
-
-			</div>
-
-			<div class="row ">
-				<div class="col-md-12 d-flex justify-content-start ms-4">
-					<a href="#">İLETİŞİM</a>
-				</div>
-
-			</div>
+			<div class="addressTitle">Adres Bilgisi</div>
+			<div class="address">Mithatpaşa Mah. Rumeli Yolu Cad. Bahçeşehir Üniversitesi Eğitim Binası Blok No: 35/24 İç Kapı No: 6 Eyüpsultan/İSTANBUL</div>
 		</div>
-
 	</div>
-
 </div>
 </template>
 
@@ -70,137 +24,106 @@ export default {
 			type: Boolean
 		}
 	},
+	data() {
+		return {
+			collapsed: true
+		}
+	},
 	watch: {
 		toggle: function(newVal, oldVal) {
 			console.log('collabse', newVal, oldVal)
-			if (newVal) {
-				this.openNav()
-			} else {
-				this.closeNav()
+			if(!this.collapsed) {
+				this.closeNav();
+			}else{
+				this.openNav();
 			}
 		}
 	},
 	methods: {
 		openNav() {
-			document.getElementById("mySidenav").style.width = "250px";
+			document.getElementById("mySidenav").style.width = "400px";
+			this.collapsed = false;
 		},
 		closeNav() {
 			document.getElementById("mySidenav").style.width = "0";
+			this.collapsed = true;
 		},
 	}
 }
 </script>
 
 <style scoped>
-body {
-	font-family: "Lato", sans-serif;
-}
-
-._container {
-	/* z-index: 101; */
-}
 
 .sidenav {
 	height: 100%;
-	/* 100% Full-height */
 	width: 0;
-	/* 0 width - change this with JavaScript */
 	position: fixed;
-	/* Stay in place */
-	z-index: 50;
-	/* Stay on top */
+	z-index: 101;
 	top: 0;
-	/* Stay at the top */
 	right: 0;
-	background-color: #050303;
-	/* Black*/
+	background-color: white;
 	overflow-x: hidden;
-	/* Disable horizontal scroll */
-	padding-top: 60px;
-	/* Place content 60px from the top */
 	transition: 0.8s;
 	-webkit-transition: 0.8s;
-	/* 0.5 second transition effect to slide in the sidenav */
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+	display: flex;
 }
 
-/* The navigation menu links */
-.sidenav a {
+._inside_container{
+	min-width: 400px;
+	padding-top: 30px;
+	padding-left: 60px;
+	padding-right: 60px;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
 
-	text-decoration: none;
+.closeContainer{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin-bottom: 40px;
+	cursor: pointer;
+}
+
+.close{
+	width: 23px;
+	object-fit: contain;
+	display: flex;
+}
+
+.logo{
+	width: 100px;
+	object-fit: contain;
+}
+
+.title{
+	width: 100%;
+	display: flex;
+	padding-top: 10px;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 22px;
+	/* font-weight: 500; */
+}
+
+.addressTitle{
+	padding-top: 40px;
+	width: 100%;
+	display: flex;
+	font-family: 'DM Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.address{
+	padding-top: 10px;
+	width: 100%;
+	display: flex;
+	font-family: 'DM Sans', sans-serif;
+	font-weight: 300;
 	font-size: 15px;
-	font-weight: 700;
-	color: rgb(255, 255, 255);
-	display: block;
-	transition: 0.3s;
-	line-height: 60px;
-	font-family: "Montserrat", sans-serif;
+	line-height: 30px;
 }
 
-.sidenav h3 {
-
-	color: #5aa3f1;
-	font-family: "Montserrat", sans-serif;
-	font-size: 13px;
-	font-weight: 700;
-	letter-spacing: 0.1rem;
-	line-height: 25px;
-
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-	color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
-	font-size: 33px;
-	line-height: 25px;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-	transition: margin-left .5s;
-	padding: 20px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-	.sidenav {
-		padding-top: 15px;
-	}
-
-	.sidenav a {
-		font-size: 18px;
-	}
-}
-
-.header-menu-text {
-	display: block;
-	position: absolute;
-	top: 0;
-	left: -70px;
-	width: 70px;
-	padding-left: 12px;
-	font-family: "Montserrat", sans-serif;
-	font-size: 15px;
-	font-weight: 600;
-
-}
-
-.header-menu-toggle {
-	position: fixed;
-	right: 60px;
-	top: 24px;
-	height: 42px;
-	width: 42px;
-	line-height: 42px;
-	font-family: "Montserrat", sans-serif;
-	font-size: 1.3rem;
-	text-transform: uppercase;
-	letter-spacing: .3rem;
-	color:#5aa3f1;
-	-webkit-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
-}
 </style>

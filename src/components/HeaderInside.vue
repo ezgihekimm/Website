@@ -191,9 +191,6 @@ export default {
 		LanguageSwitcher,
 		MenuIcon
 	},
-	created(){
-		console.log("transparent", this.transparent)
-	},
 	methods: {
 		linkCreator: function (locale, route) {
 			let result = '/'+locale+'/'
@@ -201,9 +198,6 @@ export default {
 			result += str
 			return result
 		},
-		test(){
-			console.log("test")
-		}
 	}
 }
 
