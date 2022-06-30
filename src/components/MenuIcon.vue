@@ -19,7 +19,7 @@ export default {
 	},
 	methods: {
 		openNav() {
-			this.clicked = !this.clicked
+			// this.clicked = !this.clicked
 			this.$emit('toggleMenu')
 		}
 	}
